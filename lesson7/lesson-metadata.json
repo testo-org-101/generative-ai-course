@@ -1,0 +1,266 @@
+{
+  "id": "68781a91fd11647856ed08d9",
+  "lessonNumber": 7,
+  "title": "Capstone Project",
+  "status": "complete",
+  "assignment": {
+    "title": "Capstone Project: Design and Implement a Generative Model",
+    "objective": "Apply all skills and knowledge gained from the course to develop a comprehensive generative model project.",
+    "expectedCapabilities": [
+      "Identify project objectives",
+      "Implement a generative model using suitable frameworks",
+      "Evaluate model performance",
+      "Present project findings"
+    ],
+    "submissionInstructions": "Submit a zip file containing your proposal, source code, and final presentation slides to the course portal.",
+    "tasks": [
+      {
+        "taskNumber": 1,
+        "title": "Submit Project Proposal",
+        "description": "Develop and submit a comprehensive project proposal for feedback.",
+        "codeExample": "",
+        "_id": "68781afdfd11647856ed0934"
+      },
+      {
+        "taskNumber": 2,
+        "title": "Submit Project Code and Report",
+        "description": "Complete the project implementation, testing and submit the code along with a detailed project report.",
+        "codeExample": "",
+        "_id": "68781afdfd11647856ed0935"
+      }
+    ],
+    "instructions": [
+      {
+        "partNumber": 1,
+        "steps": [
+          {
+            "taskNumber": 1,
+            "title": "Select a Project Topic",
+            "description": "Identify and finalize a topic for your capstone project.",
+            "codeExample": "N/A",
+            "_id": "68781afdfd11647856ed092b"
+          }
+        ],
+        "_id": "68781afdfd11647856ed092a"
+      },
+      {
+        "partNumber": 2,
+        "steps": [
+          {
+            "taskNumber": 2,
+            "title": "Develop a Project Proposal",
+            "description": "Create a detailed proposal outlining your project's objectives, methodologies, and expected outcomes.",
+            "codeExample": "N/A",
+            "_id": "68781afdfd11647856ed092d"
+          }
+        ],
+        "_id": "68781afdfd11647856ed092c"
+      },
+      {
+        "partNumber": 3,
+        "steps": [
+          {
+            "taskNumber": 3,
+            "title": "Implement the Project",
+            "description": "Design and implement the generative model as per your proposal.",
+            "codeExample": "# Train generative model implementation",
+            "_id": "68781afdfd11647856ed092f"
+          }
+        ],
+        "_id": "68781afdfd11647856ed092e"
+      },
+      {
+        "partNumber": 4,
+        "steps": [
+          {
+            "taskNumber": 4,
+            "title": "Test and Evaluate",
+            "description": "Conduct thorough testing and evaluation of your implemented model.",
+            "codeExample": "# Evaluate model performance script",
+            "_id": "68781afdfd11647856ed0931"
+          }
+        ],
+        "_id": "68781afdfd11647856ed0930"
+      },
+      {
+        "partNumber": 5,
+        "steps": [
+          {
+            "taskNumber": 5,
+            "title": "Prepare Final Presentation",
+            "description": "Summarize your project journey and present your findings.",
+            "codeExample": "N/A",
+            "_id": "68781afdfd11647856ed0933"
+          }
+        ],
+        "_id": "68781afdfd11647856ed0932"
+      }
+    ],
+    "checklist": [
+      "Project Proposal Completed",
+      "Implementation Commenced",
+      "Model Evaluated",
+      "Presentation Prepared"
+    ],
+    "checkForUnderstanding": [
+      {
+        "question": "What is the first step in the capstone project?",
+        "options": [
+          "Final presentation",
+          "Implementing the model",
+          "Selecting a project topic"
+        ],
+        "answer": "Selecting a project topic",
+        "_id": "68781afdfd11647856ed0927"
+      },
+      {
+        "question": "Why is evaluation crucial in project implementation?",
+        "options": [
+          "It makes the project popular",
+          "It provides data insights on model performance",
+          "It entertains project members"
+        ],
+        "answer": "It provides data insights on model performance",
+        "_id": "68781afdfd11647856ed0928"
+      },
+      {
+        "question": "What should a project presentation include?",
+        "options": [
+          "Project goals and achievements",
+          "Personal anecdotes",
+          "Secrets"
+        ],
+        "answer": "Project goals and achievements",
+        "_id": "68781afdfd11647856ed0929"
+      }
+    ]
+  },
+  "subsections": [
+    {
+      "subsectionOrder": 1,
+      "title": "Understanding the Capstone Project",
+      "content": "The capstone project represents the culmination of all the topics you have learned throughout the Generative AI Course. You will be tasked to design and implement a generative model project of your choice. This section explores possible project ideas and outlines the key objectives.",
+      "videoUrl": "http://video.com/capstoneOverview",
+      "codeExamples": [],
+      "externalLinks": [
+        "https://ai.googleblog.com/2018/05/ai-for-social-good-solving-global.html"
+      ],
+      "quizzes": [
+        {
+          "question": "What is the purpose of the capstone project in this course?",
+          "options": [
+            "To review previous lessons",
+            "To apply all learned skills practically",
+            "To learn a new programming language"
+          ],
+          "answer": "To apply all learned skills practically",
+          "_id": "68781afdfd11647856ed091e"
+        }
+      ],
+      "_id": "68781afdfd11647856ed091d"
+    },
+    {
+      "subsectionOrder": 2,
+      "title": "Project Ideas and Proposal Development",
+      "content": "In this subsection, we explore various generative model project ideas, including but not limited to image synthesis, text generation, and audio transformation. Students will learn how to develop a project proposal that clearly outlines their project goals, methodologies, and expected outcomes.",
+      "videoUrl": "http://video.com/projectIdeas",
+      "codeExamples": [],
+      "externalLinks": [
+        "https://towardsdatascience.com/101-nlp-project-ideas-7ea742e10fe"
+      ],
+      "quizzes": [
+        {
+          "question": "What should be included in a project proposal?",
+          "options": [
+            "Project goals and objectives",
+            "Budget",
+            "Personal anecdotes"
+          ],
+          "answer": "Project goals and objectives",
+          "_id": "68781afdfd11647856ed0920"
+        }
+      ],
+      "_id": "68781afdfd11647856ed091f"
+    },
+    {
+      "subsectionOrder": 3,
+      "title": "Technical Implementation Framework",
+      "content": "Students will be guided on how to set up a technical framework for their capstone project. This includes selecting appropriate tools and libraries for implementing their generative model, setting up a version control system for their code, and defining the development timelines.",
+      "videoUrl": "http://video.com/technicalFramework",
+      "codeExamples": [
+        "# Setup for Generative Adversarial Network\nimport tensorflow as tf\nfrom tensorflow.keras import layers\n"
+      ],
+      "externalLinks": [
+        "https://github.com/git-guides/"
+      ],
+      "quizzes": [
+        {
+          "question": "Which of the following is crucial for a successful technical implementation?",
+          "options": [
+            "Version control system",
+            "Fancy UI",
+            "Multiple programming languages"
+          ],
+          "answer": "Version control system",
+          "_id": "68781afdfd11647856ed0922"
+        }
+      ],
+      "_id": "68781afdfd11647856ed0921"
+    },
+    {
+      "subsectionOrder": 4,
+      "title": "Execution and Testing Strategies",
+      "content": "This subsection focuses on the execution phase of the project. It discusses best practices for data handling, model training, tuning strategies, and testing methodologies to ensure your generative model performs as expected.",
+      "videoUrl": "http://video.com/executionTesting",
+      "codeExamples": [
+        "# Example: Model evaluation\naccuracy = model.evaluate(test_data, test_labels)\nprint(accuracy)\n"
+      ],
+      "externalLinks": [
+        "https://www.kaggle.com/"
+      ],
+      "quizzes": [
+        {
+          "question": "What is the purpose of model testing?",
+          "options": [
+            "To beautify output",
+            "To assess model performance",
+            "To avoid writing code"
+          ],
+          "answer": "To assess model performance",
+          "_id": "68781afdfd11647856ed0924"
+        }
+      ],
+      "_id": "68781afdfd11647856ed0923"
+    },
+    {
+      "subsectionOrder": 5,
+      "title": "Presentation and Reflection",
+      "content": "In the concluding part of the capstone project, you'll prepare a presentation summarizing your project's journey, highlighting your project’s challenges, and reflecting on the knowledge you’ve gained throughout the course. This section will cover presentation best practices and reflection techniques.",
+      "videoUrl": "http://video.com/presentationReflection",
+      "codeExamples": [],
+      "externalLinks": [
+        "https://www.publicspeakingforlife.com.au/"
+      ],
+      "quizzes": [
+        {
+          "question": "Why is reflection important in a project?",
+          "options": [
+            "To identify areas for improvement",
+            "To boast about achievements",
+            "To entertain"
+          ],
+          "answer": "To identify areas for improvement",
+          "_id": "68781afdfd11647856ed0926"
+        }
+      ],
+      "_id": "68781afdfd11647856ed0925"
+    }
+  ],
+  "supplementalVideos": [
+    "http://video.com/capstonePreparation"
+  ],
+  "references": [
+    "https://www.researchgate.net/",
+    "https://www.analyticsvidhya.com/"
+  ]
+}
