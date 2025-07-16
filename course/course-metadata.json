@@ -1,0 +1,35 @@
+{
+  "id": "68781a91fd11647856ed08cb",
+  "title": "Generative AI Course",
+  "description": "An in-depth course that focuses on understanding and implementing generative models, a key aspect of artificial intelligence, for data synthesis, prediction and simulation.",
+  "learningObjectives": [
+    "Understand fundamentals of generative models",
+    "Implement generative models using Python and associated libraries",
+    "Understand and implement Generative Adversarial Networks",
+    "Work on generative models with text, image, and audio data",
+    "Design and implement a project using generative models"
+  ],
+  "finalProjectDetails": {
+    "overview": "Creation of a generative model for a chosen dataset (text, image, or audio) that achieves a defined benchmark performance.",
+    "planningResources": [
+      "Python and TensorFlow documentation",
+      "GAN papers and blogs",
+      "Text, image, and audio dataset sources"
+    ],
+    "submissionInstructions": "Submit your project via the course’s online portal. Your submission should include your Python files with documentation, the data set (.txt or .csv format), and a final report in PDF format.",
+    "requirements": [
+      ""
+    ]
+  },
+  "createdBy": {
+    "_id": "6800a73454438765dcfd5e07",
+    "name": "Tammam Alwafai",
+    "image": "https://avatars.githubusercontent.com/u/47179662?v=4",
+    "githubUsername": "1992tw"
+  },
+  "contributors": [],
+  "status": "pending",
+  "originalGithubUrl": null,
+  "createdAt": "2025-07-16T21:33:05.023Z",
+  "updatedAt": "2025-07-16T21:33:05.023Z"
+}
