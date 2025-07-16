@@ -1,0 +1,206 @@
+{
+  "id": "68781a91fd11647856ed08d8",
+  "lessonNumber": 6,
+  "title": "Generative Models with Audio Data",
+  "status": "complete",
+  "assignment": {
+    "title": "Develop a Basic Audio Generative Model",
+    "objective": "Implement a basic audio generative model using either WaveNet or a GAN-based architecture.",
+    "expectedCapabilities": [
+      "Implement data pre-processing pipeline for audio",
+      "Develop a simple generative model for audio",
+      "Evaluate model performance using both metrics and osubjective methods"
+    ],
+    "submissionInstructions": "Submit a .zip file containing your dataset preparation scripts, model code, and audio samples generated.",
+    "tasks": [
+      {
+        "taskNumber": 1,
+        "title": "Implement the Audio Pre-processing Pipeline",
+        "description": "Write scripts to load audio files and apply transformations like MFCC conversion.",
+        "codeExample": "import librosa\nsignal, sr = librosa.load('audio_file.wav', sr=16000)\nmfccs = librosa.feature.mfcc(y=signal, sr=sr, n_mfcc=20)",
+        "_id": "68781ab9fd11647856ed0912"
+      },
+      {
+        "taskNumber": 2,
+        "title": "Build and Train the Model",
+        "description": "Configure and train a WaveNet or WaveGAN model on the prepared dataset.",
+        "codeExample": "model = WaveNetModel(layer_size=30, stack_size=5, dilations=[1, 2, 4, 8])",
+        "_id": "68781ab9fd11647856ed0913"
+      }
+    ],
+    "instructions": [
+      {
+        "partNumber": 1,
+        "steps": [
+          {
+            "taskNumber": 1,
+            "title": "Pre-process the Audio Dataset",
+            "description": "Load and pre-process an audio dataset using Librosa. Extract MFCC features.",
+            "codeExample": "import librosa\nsignal, sr = librosa.load('audio_file.wav', sr=16000)\nmfccs = librosa.feature.mfcc(y=signal, sr=sr, n_mfcc=20)",
+            "_id": "68781ab9fd11647856ed090f"
+          },
+          {
+            "taskNumber": 2,
+            "title": "Design and Train Generative Model",
+            "description": "Choose either WaveNet or GAN, design the model architecture, and train it on the pre-processed audio data.",
+            "codeExample": "model = WaveNetModel(layer_size=30, stack_size=5, dilations=[1, 2, 4, 8])\nmodel.compile(optimizer='adam', loss='categorical_crossentropy')",
+            "_id": "68781ab9fd11647856ed0910"
+          },
+          {
+            "taskNumber": 3,
+            "title": "Evaluate Model on Test Data",
+            "description": "Use PESQ or listener tests to evaluate the generated audio samples.",
+            "codeExample": "score = pesq(fs, ref_signal, degraded_signal, 'wb')",
+            "_id": "68781ab9fd11647856ed0911"
+          }
+        ],
+        "_id": "68781ab9fd11647856ed090e"
+      }
+    ],
+    "checklist": [
+      "Audio data pre-processed",
+      "Model implemented and trained",
+      "Audio samples generated",
+      "Evaluation conducted"
+    ],
+    "checkForUnderstanding": [
+      {
+        "question": "What technique did you use for feature extraction in the audio?",
+        "options": [
+          "MFCC",
+          "Spectrogram",
+          "Waveform"
+        ],
+        "answer": "MFCC",
+        "_id": "68781ab9fd11647856ed090b"
+      },
+      {
+        "question": "Which evaluation metric is used for objective audio quality assessment?",
+        "options": [
+          "RMSE",
+          "PESQ",
+          "FFT"
+        ],
+        "answer": "PESQ",
+        "_id": "68781ab9fd11647856ed090c"
+      },
+      {
+        "question": "What purpose does data augmentation serve in audio processing?",
+        "options": [
+          "Reduces noise",
+          "Increases data diversity",
+          "Decreases training time"
+        ],
+        "answer": "Increases data diversity",
+        "_id": "68781ab9fd11647856ed090d"
+      }
+    ]
+  },
+  "subsections": [
+    {
+      "subsectionOrder": 1,
+      "title": "Understanding Audio Data in Generative Models",
+      "content": "Audio data needs to be represented in a numerical form that models can interpret. Common representations include waveform, spectrograms, and Fourier transformed data. Each representation has its pros and cons depending on the type of generative task.",
+      "videoUrl": "http://video.com/understandingAudioData",
+      "codeExamples": [],
+      "externalLinks": [
+        "https://www.analyticsvidhya.com/audio-data-explained/"
+      ],
+      "quizzes": [
+        {
+          "question": "Which of the following is NOT a common representation of audio data?",
+          "options": [
+            "Waveform",
+            "Spectrogram",
+            "Bitmap"
+          ],
+          "answer": "Bitmap",
+          "_id": "68781ab9fd11647856ed0904"
+        }
+      ],
+      "_id": "68781ab9fd11647856ed0903"
+    },
+    {
+      "subsectionOrder": 2,
+      "title": "Pre-processing Audio Data for Generative Models",
+      "content": "· Audio normalization is crucial to reduce the range of values and stabilize training.\n· Feature extraction is conducted to convert audio signals into feature vectors (e.g., MFCC – Mel-Frequency Cepstral Coefficients).\n· Data augmentation can be applied to increase dataset size by introducing noise or shifting pitch.",
+      "videoUrl": "http://video.com/preProcessingAudio",
+      "codeExamples": [
+        "import librosa\nsignal, sr = librosa.load('audio_file.wav', sr=16000)\nmfccs = librosa.feature.mfcc(y=signal, sr=sr, n_mfcc=20)"
+      ],
+      "externalLinks": [
+        "https://librosa.org/"
+      ],
+      "quizzes": [
+        {
+          "question": "What is MFCC used for in audio processing?",
+          "options": [
+            "Data Augmentation",
+            "Noise Reduction",
+            "Feature Extraction"
+          ],
+          "answer": "Feature Extraction",
+          "_id": "68781ab9fd11647856ed0906"
+        }
+      ],
+      "_id": "68781ab9fd11647856ed0905"
+    },
+    {
+      "subsectionOrder": 3,
+      "title": "Creating Generative Models for Audio",
+      "content": "Different models can be used for generating audio: \n- **WaveNet**: Generates high-fidelity audio with autoregressive models.\n- **GAN-based models**: Such as WaveGAN, which focus on generating raw audio directly using adversarial training.\n\n### WaveNet Example Code:\n```python\nmodel = WaveNetModel(layer_size=30, stack_size=5, dilations=[1, 2, 4, 8])\nmodel.compile(optimizer='adam', loss='categorical_crossentropy')\n```",
+      "videoUrl": "http://video.com/generativeAudioModels",
+      "codeExamples": [
+        "# Example of simple WaveNet configuration...\n"
+      ],
+      "externalLinks": [
+        "https://deepmind.com/research/publications/wavenet"
+      ],
+      "quizzes": [
+        {
+          "question": "Which model is primarily used for high-fidelity audio generation?",
+          "options": [
+            "WaveGAN",
+            "WaveNet",
+            "AutoEncoder"
+          ],
+          "answer": "WaveNet",
+          "_id": "68781ab9fd11647856ed0908"
+        }
+      ],
+      "_id": "68781ab9fd11647856ed0907"
+    },
+    {
+      "subsectionOrder": 4,
+      "title": "Evaluating Generative Audio Models",
+      "content": "Generative audio models can be evaluated using subjective and objective methods:\n- **Subjective Methods**: Listener tests are conducted for human perception evaluation.\n- **Objective Methods**: Use metrics like Signal-to-Noise Ratio (SNR) and log-likelihood.\n\n```python\n# Sample code for evaluation with PySAR GIST\nfrom pesq import pesq\nscore = pesq(fs, ref_signal, degraded_signal, 'nb')\n```",
+      "videoUrl": "http://video.com/evaluatingAudioModels",
+      "codeExamples": [
+        "# Using PESQ for objective evaluation\nfrom pesq import pesq\nscore = pesq(fs, ref_signal, degraded_signal, 'wb')"
+      ],
+      "externalLinks": [
+        "https://www.itl.nist.gov/iad/mig/tests/spet/"
+      ],
+      "quizzes": [
+        {
+          "question": "What does SNR stand for in the context of audio evaluation?",
+          "options": [
+            "Signal Notation Review",
+            "Sound Noise Ratio",
+            "Signal-to-Noise Ratio"
+          ],
+          "answer": "Signal-to-Noise Ratio",
+          "_id": "68781ab9fd11647856ed090a"
+        }
+      ],
+      "_id": "68781ab9fd11647856ed0909"
+    }
+  ],
+  "supplementalVideos": [
+    "http://video.com/advancedAudioGenerativeModels"
+  ],
+  "references": [
+    "https://librosa.org/doc/latest/index.html",
+    "https://deepmind.com/research/publications/wavenet"
+  ]
+}
